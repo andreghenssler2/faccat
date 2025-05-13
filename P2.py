@@ -1,17 +1,20 @@
+# Dada a raiz de uma árvore binária, retorne uma lista contendo os nós de cada nível, da esquerda para a direita, nível por nível.
+# """Montando a árvore do exemplo:
+#        3
+#       / \
+#      9  20
+#         / \
+#       15   7"""
+
+
 from collections import deque
 
 class TreeNode:
     def __init__(self, val=0, esquerda=None, direita=None):
-        self.val = val
-        self.left = esquerda
-        self.right = direita
+        self.val = val # valor armazenado no nó
+        self.left = esquerda # filho à esquerda
+        self.right = direita # filho à direita
 
-print( """Montando a árvore do exemplo:
-        3
-       / \
-      9  20
-         / \
-       15   7""")
 
 raiz = TreeNode(3)
 raiz.left = TreeNode(9)
